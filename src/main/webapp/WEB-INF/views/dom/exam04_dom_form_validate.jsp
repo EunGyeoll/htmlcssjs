@@ -9,7 +9,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript">
-const handleCheckData =() => {
+const handleCheckData = () => {
   event.preventDefault();
   let totalResult = true;
   //Check id
@@ -17,7 +17,6 @@ const handleCheckData =() => {
   const el_uid = document.querySelector("#uid");
   const el_span = document.querySelector("#uid_error");
   //el_uid = document.joinForm.uid;
-  const el_uid_value = el_uid.value;
   const uidResult = uidPattern.test(el_uid.value);
 
   if(!uidResult) {
